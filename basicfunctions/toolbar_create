@@ -1,0 +1,7 @@
+function onOpen() {
+  SpreadsheetApp.getUi()
+    .createAddonMenu()
+    .addItem('Create PDF', 'CreatePDF')
+    .addToUi()
+}
+
