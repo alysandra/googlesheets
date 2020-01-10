@@ -1,0 +1,7 @@
+function CreatePDF() {
+   var sheet = SpreadsheetApp.getActive().getSheetByName('Picking Sheet');
+   var lastrow = sheet.getRange("O"+(sheet.getLastRow()+1)).getNextDataCell(SpreadsheetApp.Direction.UP).getRow();
+  
+   var printrange = sheet.getRange("N1:W" + lastrow)
+   printrange.activate()
+}
